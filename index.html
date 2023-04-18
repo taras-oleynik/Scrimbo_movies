@@ -1,0 +1,49 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+
+    <div class="container">
+        <header>
+            <h1>Find your film</h1> 
+            <h3><a href="watchlist.html" >My Watchlist</a></h3>
+        </header>
+        <div class="search-holder">
+            <div class="search-child">
+                <div class="search-icon">
+                    <label >   
+                        <img for="search-bar"  src="images/Icon.png"/>
+                        <input type="search" id="search-bar" name="q" placeholder="Search for a  movie"/>     
+                    </label>
+                </div>
+                <button id="sbm-btn">Search</button>
+            </div>
+        </div>
+        <main>
+            <div class="display-content">
+                <!-- <div id="movie-data" class="movie-data"> -->
+                    <hr/>
+                    <div class="no-search-yet">
+                        <div class="no-search-found">
+                            <div class="no-search-found-text"></div>         
+                            <div class="start-exploring">
+                                <div class="start-exploring-img">
+                                    <img id="start-search-img" src="images/empty.png"/>
+                                </div>
+                                <div class="start-exploring-img-text"></div>
+                                <img id="start-search-text" src="images/Startexploring.png"/>
+                            </div>
+                        </div>
+                    </div>
+                <!-- </div>  -->
+                
+            </div> <!--------display-content End--------->
+         
+        </main>
+    </div>
+
+
+    <script src="index.js" type="module"></script>
+    </body>
+</html>

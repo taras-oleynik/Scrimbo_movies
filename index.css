@@ -1,0 +1,201 @@
+html, body { 
+    padding: 0;
+    
+}
+
+header {
+    color: #fff; 
+    display: flex;
+    justify-content: space-evenly;
+    height: 208px;
+    background: rgba(0, 0, 0, 0.8);
+    background-image: url("images/THJJRUhNlEc.png");
+    background-size: cover; 
+}
+
+h1, h3 {
+    margin: 0 rem;
+    display: flex;
+    align-items: center;
+}
+h1 a, h3 a {
+  color: #fff;
+  text-decoration: none; 
+}
+.container {
+    height: 990px;
+    width: 550px;
+    margin: auto;
+}
+.search-holder {
+    position: relative;
+    display: flex;
+    justify-content: center; 
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+}
+.search-child {
+    display: flex;
+    position: absolute; 
+    top: -10px; 
+    background-color: #fff;
+    border: 1px solid #D1D5DB;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+}
+
+input {
+    width: 342px;
+    border: none;
+}
+button {
+    border-radius: 0px 6px 6px 0px;
+    width: 120px;
+    height: 38px;
+    justify-content: center;
+    background-clip: #F9FAFB;
+    border: 1px solid #D1D5DB;
+}
+.search-icon {
+    padding: 0 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+ .no-search-found-text p, .watch-list-empty p{
+    width: 20rem;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    color: #DFDDDD;
+ }
+ .no-search-yet {
+     width: 550px;
+     height: 779px;
+     display: flex;
+    align-items: center;
+    justify-content: center; 
+ }
+ .start-exploring {
+     display: flex;
+     flex-direction: column;
+     align-items: center;   
+ }
+ 
+ .movie-data {
+    display: flex;
+    margin-top: 3em;
+    margin-left: 1.52em;
+ }
+ 
+ .main-poster img {
+    border-radius: 2.32941px;
+    width: 6.187rem;
+    height: 9.213rem;
+ }
+ 
+ .empty-div {
+     width: 20px;
+ }
+ 
+ .movie-datails-info {
+     font-size: 14px;     
+ }
+ 
+.movie-title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+}
+ 
+ .title-imdb {
+     display: flex;
+     margin-bottom: 0.8em;
+ }
+ .runtime, .movie-title  {
+     margin-right: 1em;
+ }
+ 
+ .ganre {
+    margin-right: 2em;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: #111827;
+ }
+ .watchlist-icon, .movie-imdb-icon {
+    margin-right: 0.5em; 
+ }
+ 
+ .tech-data {
+     display: flex;
+     margin-bottom: 0.5em;
+ }
+ 
+ .short-descrp {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #6B7280;
+ }
+ 
+ /* =====================watchList==================== */
+ .watch-list-empty p {
+    margin: 11em auto 0 auto;;
+ }
+ .add-movies {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+ .add-movies img {
+    width: 1.125rem;
+    height: 1.125rem;
+    margin-right: 0.44rem; 
+ }
+ 
+.add-movies p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.875em;
+    line-height: 1.25rem;
+    text-align: center;
+    color: #363636;
+}
+
+#watchlist-btn-add {
+    background:url(./images/add-icon.png) no-repeat;
+    cursor:pointer;
+    border:none;
+    width:20px;
+    height:20px;
+}
+#watchlist-btn-remove {
+    background:url(./images/remove-icon.png) no-repeat;
+    cursor:pointer;
+    border:none;
+    width:20px;
+    height:20px;
+}
+
+#watchlist-btn:active  
+{   
+    background:url(./images/but2.png) no-repeat;
+}
+/* =========================watch list page=============== */
+.watch-list {
+    margin: 2.2em 0 0 2.7em;
+}
+
+
