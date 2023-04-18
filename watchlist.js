@@ -1,4 +1,4 @@
-import getMovieDataHtml from "./getMovieDataHtml"
+import getMovieDataHtml from "./getMovieDataHtml.js";
 
 
 let moviesFromLocalStoregeArr = []
@@ -13,7 +13,7 @@ if (movieDataArr){
         return getMovieDataHtml(movieData, "remove", "Remove")
     }) 
 }
- watchHolder.innerHTML = moviesFromLocalStoregeArr.join('')
+watchHolder.innerHTML = moviesFromLocalStoregeArr.join("");
  
  /**
   * TODO:
@@ -24,33 +24,25 @@ if (movieDataArr){
     5 Re render list of watchList 
   */
  function removeButtonOnClick(e) {
-     const imdbID = e.target.dataset.remove
-    const movieDataArr = JSON.parse(localStorage.getItem("myWatchList"))
+  const imdbID = e.target.dataset.remove;
+  const movieDataArr = JSON.parse(localStorage.getItem("myWatchList"));
     const movieDataArrNew = movieDataArr.filter((movieData) => {
-        return movieData.imdbID !== imdbID
-    })
-    localStorage.setItem("myWatchList", JSON.stringify(movieDataArrNew))
-    const watchHolder = document.querySelector(".watch-list")
+    return movieData.imdbID !== imdbID;
+  });
+  localStorage.setItem("myWatchList", JSON.stringify(movieDataArrNew));
+  const watchHolder = document.querySelector(".watch-list");
      const test = movieDataArrNew.map((movieData) => {
-        return getMovieDataHtml(movieData, "remove", "Remove")
-    })
+    return getMovieDataHtml(movieData, "remove", "Remove");
+  });
     
-   
-    
-   watchHolder.innerHTML = test.join("")
-  renderRemoveButton()         
+  watchHolder.innerHTML = test.join("");
+  renderRemoveButton();
  } 
  
 function renderRemoveButton() {
-    const removeButtonsArr = document.querySelectorAll(".remove-from-watchlist")
+  const removeButtonsArr = document.querySelectorAll(".remove-from-watchlist");
     removeButtonsArr.forEach((removeButton) => {
-        removeButton.addEventListener("click", removeButtonOnClick)
-    }) 
+    removeButton.addEventListener("click", removeButtonOnClick);
+  });
 }
-renderRemoveButton()
-
-
- 
-
-
-
+renderRemoveButton();
